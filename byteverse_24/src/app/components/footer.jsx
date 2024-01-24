@@ -1,0 +1,71 @@
+import Image from 'next/image'
+import { Montserrat,Inter } from 'next/font/google';
+let insta='/byteverse/footer/Instagram.svg';
+let twit='/byteverse/footer/TwitterX.svg';
+let yt='/byteverse/footer/YouTube.svg';
+let lin='/byteverse/footer/Linkedin.svg';
+let cr='/byteverse/footer/Copyright.svg';
+let terms='/byteverse/footer/tnc.svg';
+let qr='/byteverse/footer/Qr.svg';
+let discord='/byteverse/footer/Discord.svg';
+let byteverse='/byteverse/footer/byteverse.svg';
+let hackslash='/byteverse/footer/Hackslash.svg';
+let desco='/byteverse/footer/Desco.svg';
+
+const FooterSection=()=>{
+    return <div className="h-[140vh] font-[Inter] flex flex-col bg-cover bg-no-repeat " style={{backgroundImage:"url(/byteverse/footer/footerbg.png)"}}>
+        <div className="h-[115vh] "></div>
+        <div className="lg:grid-cols-3 grid grid-row-3 h-[25vh]  ">
+            <div className="flex lg:justify-end flex-col lg:items-start items-center lg:pl-7 lg:pb-5 lg:my-0 my-10">
+                <div className="flex items-center ">
+                    <img src="/byteverse/footer/nitplogo.svg" alt="" className='md:h-16 h-12 '/>
+                    <div className=" lg:w-[18vw] w-[60vw]  ml-5   lg:font-semibold text-[0.8rem]">Student Activity Center(SAC), NIT Patna Ashok Rajpath, Patna, Bihar - 800005</div>
+                </div>
+                <div className='flex justify-center gap-10 items-center mt-5'>
+                    <img src={insta} className=' h-5 '/>
+                    <img src={twit} className='  h-5 '/>
+                    <img src={lin} className=' h-6 '/>
+                    <img src={yt} className=' h-5 '/>
+                </div>
+                
+            </div>
+            <div className=" justify-self-center lg:self-end">
+                <div className='flex gap-3 items-center mb-8  '>
+                    <img src={cr} alt="" />
+                    <img src={byteverse} alt="" className='h-8 lg:h-auto' />
+                    <div className='bg-white h-8 w-[2px]'></div>
+                    <div className="text-sm">NIT Patna 2024</div>
+                </div>
+            </div>
+            <div className="flex  flex-col mt-5 lg:mt-0 items-center lg:items-end gap-6">
+                <div className="flex flex-col gap-2 lg:mr-16    ">
+                    <div className="flex items-center gap-5 ">
+                        <img src={discord} alt="" className='h-6'/>
+                        <div className='text-[10px]'>Join us @Discord</div>
+                    </div>
+                    <div className="flex items-center gap-5">
+                        <img src={terms} alt="" className='h-6'/>
+                        <div className='text-[10px]'>Terms and Conditions</div>
+                    </div>
+                    <div className="flex items-center gap-5">
+                        <img src={qr} alt="" className='h-6'/>
+                        <div className='text-[10px]'>Code of Conduct</div>
+                    </div>
+                    
+                </div>
+                <div className='flex gap-4 mr-8'>
+                    <div className='flex flex-col items-center'>
+                        <img src={hackslash} alt="" />
+                        <div className='ml-6 text-[12px] text-neutral-400'>Hosted by</div>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                         <img src={desco} alt="" />
+                        <div className='text-[12px] text-neutral-400'>Designed by</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+}
+export default FooterSection;
