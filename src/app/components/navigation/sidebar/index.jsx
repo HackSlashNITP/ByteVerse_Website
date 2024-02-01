@@ -54,7 +54,6 @@ export default function Sidebar({ open, toggle }) {
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
-          onClick={toggle}
         >
           <Link
             to="about"
@@ -67,7 +66,6 @@ export default function Sidebar({ open, toggle }) {
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
-          onClick={toggle}
         >
           <Link
             to="timeline"
@@ -80,7 +78,6 @@ export default function Sidebar({ open, toggle }) {
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
-          onClick={toggle}
         >
           <Link
             to="rules"
@@ -93,7 +90,6 @@ export default function Sidebar({ open, toggle }) {
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
-          onClick={toggle}
         >
           <Link
             to="sponsors"
@@ -106,7 +102,6 @@ export default function Sidebar({ open, toggle }) {
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
-          onClick={toggle}
         >
           <Link
             to="contact"
