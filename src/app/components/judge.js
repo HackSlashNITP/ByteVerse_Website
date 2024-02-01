@@ -53,10 +53,10 @@ const Judges = () => {
             alignItems: 'center',
             height: '50vh',
             position: 'relative',
-            background: 'linear-gradient(0deg, rgb(72,0,0) 70%, rgb(114,0,0) 100%)',
+            background: 'linear-gradient(180deg, rgb(114,0,0) 0%, rgb(150,0,0) 30%, rgb(172,0,0) 70%, rgb(160,0,0) 100%)',
             overflow: 'scroll',
             padding: '1rem'
-          }}
+          }}  
       >
       {judges.map((judge, index) => (
         <div key={index} className="circle-container">
@@ -78,6 +78,7 @@ const Judges = () => {
         </div>
       ))}
       </div>
+      
     </main>
   );
 };
