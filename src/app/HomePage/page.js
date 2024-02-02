@@ -8,7 +8,7 @@ import PaperRoll from "../components/PaperRoll";
 
 const HomePage = () => {
   return (
-    <main id="home" className="bg-[#ffd4d4]">
+    <main className="bg-[#720D0D]">
       <Hero />
       <div id="about" className="  h-[1500px] md:h-[1000px] gradient-bg  p-5">
         <About />
@@ -23,6 +23,8 @@ const HomePage = () => {
           Judges Section
         </h1>
     </div>*/}
+      <PaperRoll />
+      <Judges />
       <PaperRoll />
       <Judges />
       {/* <div className="h-48 w-full my-10 shadow-xl bg-[#ffd4d4]  shadow-black">
