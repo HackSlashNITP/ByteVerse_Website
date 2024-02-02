@@ -11,7 +11,7 @@ const Judges = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '50vh',
+          height: '55vh',
           position: 'relative',
           background: 'linear-gradient(180deg, rgb(72,0,0) 70%, rgb(114,0,0) 100%)'
         }}
