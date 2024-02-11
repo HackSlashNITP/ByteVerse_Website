@@ -3,9 +3,6 @@
 import React from "react";
 import Card from "./card";
 import AboutIamge from "./AboutIamge";
-import KnifeImage from "./KnifeImage";
-import DCard from "./Dcard";
-import GCard from "./Gcard";
 import Link from "next/link";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
