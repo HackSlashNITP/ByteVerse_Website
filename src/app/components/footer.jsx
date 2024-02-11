@@ -7,7 +7,7 @@ import Link from "next/link";
 let insta = "/byteverse/footer/Instagram.svg";
 let twit = "/byteverse/footer/TwitterX.svg";
 let yt = "/byteverse/footer/YouTube.svg";
-let lin = "/byteverse/footer/Linkedin.svg";
+let lin = "/byteverse/footer/LinkedIn.svg";
 let cr = "/byteverse/footer/Copyright.svg";
 let terms = "/byteverse/footer/tnc.svg";
 let qr = "/byteverse/footer/Qr.svg";

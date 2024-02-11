@@ -107,3 +107,14 @@
     opacity: 1;
  
   } 
+
+
+  /* for sponserCard */
+  .onhoverimg:hover{
+    /* background-color: #9f0b0b; */
+    transform: scale(1.08);
+    /* filter:brightness(85%) */
+  }
+  .onhoverimg{
+    transition: all .3s ease;
+  }

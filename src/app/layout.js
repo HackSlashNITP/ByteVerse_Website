@@ -13,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>  
+      </body>
     </html>
   );
 }

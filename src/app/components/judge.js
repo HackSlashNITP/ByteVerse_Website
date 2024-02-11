@@ -8,7 +8,7 @@ import judges from "./judges.json";
 
 const Judges = () => {
   return (
-    <section id="sponsors">
+    <section id="judges">
       <div
         style={{
           display: "flex",
