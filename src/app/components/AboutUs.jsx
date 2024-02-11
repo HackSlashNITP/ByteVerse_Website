@@ -6,7 +6,10 @@ import AboutIamge from "./AboutIamge";
 import KnifeImage from "./KnifeImage";
 import DCard from "./Dcard";
 import GCard from "./Gcard";
-const About = () => {
+import Link from "next/link";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
+const About = (props) => {
   return (
     <main id="about" className="flex flex-col  md:justify-start items-center   h-screen  ">
       <div className=" md-10"> 
@@ -16,13 +19,76 @@ const About = () => {
         <Card
         />
         </div>
-        <div className="m-4"></div>
-        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-evenly items-center">
-        <GCard />
-        <DCard />
+        <div className="m-14">
+        <div className="flex flex-col md:space-y-2 md:flex-row justify-evenly items-center">
+        <div className="bg-[#541E1E] w-10/10 md:w-3/5 lg:w-2/5 h-9/10 flex flex-col p-5 rounded-lg shadow-md md:p-10">
+      <div className="flex flex-col items-center pt-10 sm:pt-10">
+        <div className="flex flex-col items-center">
+        <Image
+            className="object-contain mt-8"
+            src={`/byteverse/gdsclogo.png`}
+            alt=" Logo"
+            width={380}
+            height={380}
+          />
         </div>
-  
-
+        <div className="w-full">
+          <p className="md:pt-8 text-white text-justify">
+            Lorem ipsum dolor sit amying on meaningful content. Lorem ipsum may be
+            used as a placeholder before final copy is available. adipiscing elit.
+            consectetur adipiscing elit. ... used as a placeh
+          </p>
+        </div>
+        <div className="w-full flex flex-row justify-center items-center gap-2 p-3">
+          <Link href={`${props.instagram}`} target="_blank">
+            <div className="text-white hover:text-pink-500 transition-colors duration-300">
+              <FaInstagram size={30} />
+            </div>
+          </Link>
+          <Link href={`${props.linkedin}`} target="_blank">
+            <div className="text-white hover:text-blue-500 transition-colors duration-300">
+              <FaLinkedin size={30} />
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
+     <div className="mt-4"></div>
+    <div className="bg-[#541E1E] w-10/10 md:w-3/5 lg:w-2/5 h-9/10 flex flex-col rounded-lg shadow-md md:p-10">
+      <div className="flex flex-col items-center pt-10 sm:pt-10">
+      <div className=" flex flex-col items-center">
+        <Image
+            className="object-contain mt-8"
+            src={`/byteverse/desco.png`}
+            alt=" Logo"
+            width={140}
+            height={140}
+          />
+        </div>
+        <div className="w-full">
+          <p className=" md:pt-8 text-white text-justify">
+            Lorem ipsum dolor sit amying on meaningful content. Lorem ipsum may be
+            used as a placeholder before final copy is available. adipiscing elit.
+            consectetur adipiscing elit. ... used as a placeh
+          </p>
+        </div>
+        <div className="w-full flex flex-row justify-center items-center gap-2 p-3">
+          <Link href={`${props.instagram}`} target="_blank">
+            <div className="text-white hover:text-pink-500 transition-colors duration-300">
+              <FaInstagram size={30} />
+            </div>
+          </Link>
+          <Link href={`${props.linkedin}`} target="_blank">
+            <div className="text-white hover:text-blue-500 transition-colors duration-300">
+              <FaLinkedin size={30} />
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
+        </div>
+       
+        </div>
     </main>
   );
 };

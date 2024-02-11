@@ -28,12 +28,12 @@ const Card = (props) => {
         </div>
         <div className="w-7/10 mb-6 md:w-1/20 flex flex-row md:flex-col justify-center items-center pt-5 gap-2">
           <Link href={`${props.instagram}`} target="_blank">
-            <div className="hover:text-pink-500 transition-colors duration-300">
+            <div className="text-white hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={30} />
             </div>
           </Link>
           <Link href={`${props.linkedin}`} target="_blank">
-            <div className="hover:text-blue-500 transition-colors duration-300">
+            <div className="text-white hover:text-blue-500 transition-colors duration-300">
               <FaLinkedin size={30} />
             </div>
           </Link>

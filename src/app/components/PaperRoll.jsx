@@ -19,7 +19,7 @@ const PaperRoll = () => {
   }, []);
 
   return (
-    <main className="mt-20 py-8 bg-[#4A0000] flex justify-center">
+    <main className="bg-[#4A0000] flex justify-center">
       <div className="py-20 pb-40 flex flex-col align-middle w-[90vw] ">
         <img
           src="/PaperRoll.svg"
