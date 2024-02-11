@@ -26,7 +26,7 @@ const Card = (props) => {
             consectetur adipiscing elit. ... used as a placeh
           </p>
         </div>
-        <div className="w-7/10 mb-4 md:w-1/20 flex flex-row md:flex-col justify-center items-center pt-5 gap-2">
+        <div className="w-7/10 mb-6 md:w-1/20 flex flex-row md:flex-col justify-center items-center pt-5 gap-2">
           <Link href={`${props.instagram}`} target="_blank">
             <div className="hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={30} />

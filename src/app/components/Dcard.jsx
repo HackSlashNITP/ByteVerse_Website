@@ -12,8 +12,8 @@ const DCard = (props) => {
             className="object-contain mt-16"
             src={`/byteverse/desco.png`}
             alt=" Logo"
-            width={120}
-            height={120}
+            width={128}
+            height={128}
           />
         </div>
         <div className="w-full">
@@ -23,7 +23,7 @@ const DCard = (props) => {
             consectetur adipiscing elit. ... used as a placeh
           </p>
         </div>
-        <div className="w-full flex flex-row justify-center items-center gap-2 pt-5">
+        <div className="w-full flex flex-row justify-center items-center gap-2 pt-3 pb-2">
           <Link href={`${props.instagram}`} target="_blank">
             <div className="hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={30} />
