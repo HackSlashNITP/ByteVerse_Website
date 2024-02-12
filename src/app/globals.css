@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Japanese3017";
+        src: url('../../public/fonts/Japanese3017.ttf');
+    }
+    @font-face {
+        font-family: "Lato-Regular";
+        src: url('../../public/fonts/Lato-Regular.ttf');
+    }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+a, img, button, input, label, span {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.gradient-bg {
+  background: linear-gradient(180deg, #000000 -8.85%, #4A0000 98.67%);
+
+
+  
+}
+
+
+

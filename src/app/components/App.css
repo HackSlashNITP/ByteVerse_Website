@@ -1,0 +1,109 @@
+    .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+  
+.hide-scrollbar {
+    scrollbar-width: none;  
+    -ms-overflow-style: none;  
+    display: flex;
+    height:70vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* gap: 1rem; */
+    /* justify-content: center;
+    align-items: center; */
+    background: linear-gradient(180deg, rgb(114,0,0) 0%,  rgb(172,0,0) 70%, #9f0b0b 100%);
+    /* background: linear-gradient(180deg, rgb(60,0,0) 0%, rgb(80,0,0) 30%, rgb(100,0,0) 70%, rgb(90,0,0) 100%); */
+    /* padding: 1rem; */
+    overflow: scroll;
+}
+
+.circle-container {
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 1rem; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    width: 11vw;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+}
+
+
+@media (max-width: 768px) {
+    .circle-container {
+        height: 20vw;
+        width: 20vw;
+    }
+    .hide-scrollbar {
+      grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+@media (max-width: 576px) {
+    .circle-container {
+        height: 30vw;
+        width: 30vw;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+   
+}
+
+@media (max-width: 400px) {
+    .circle-container {
+        height: 30vw;
+        width: 30vw;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+
+
+  .image-container:hover img {
+    filter: blur(0.5px);
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    
+    
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icon  {
+
+    width: 50px;
+    height: 50px;
+    
+    z-index: 2;
+  }
+  
+  .image-container:hover .social-icons {
+    opacity: 1;
+ 
+  } 
