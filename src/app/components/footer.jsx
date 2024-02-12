@@ -7,7 +7,7 @@ import Link from "next/link";
 let insta = "/byteverse/footer/Instagram.svg";
 let twit = "/byteverse/footer/TwitterX.svg";
 let yt = "/byteverse/footer/YouTube.svg";
-let lin = "/byteverse/footer/Linkedin.svg";
+let lin = "/byteverse/footer/LinkedIn.svg";
 let cr = "/byteverse/footer/Copyright.svg";
 let terms = "/byteverse/footer/tnc.svg";
 let qr = "/byteverse/footer/Qr.svg";
@@ -88,7 +88,6 @@ const FooterSection = () => {
             className="rounded-md md:rounded-lg py-2 pl-5 h-[10vh] lg:h-[20vh] resize-none   focus:outline-none focus:outline 
                     focus:outline-rose-500
                     focus:outline-offset-2 focus:outline-2"
-            re
             placeholder="Write your message"
             name="body"
           ></textarea>

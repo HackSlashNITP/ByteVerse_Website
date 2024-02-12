@@ -18,9 +18,12 @@ export default function Body() {
         nec. Pellentesque facilisis justo vitae dui congue congue.
       </p>
       <div className="flex gap-6 items-center justify-center">
-        <button className="bg-blue-600 p-3 rounded-full">
-          DEVFOLIO {/*we can use apply with devfolio integration here. https://guide.devfolio.co/organizers/apply-with-devfolio-integration*/}
-        </button>
+      <div 
+	      className="apply-button" 
+	      data-hackathon-slug="byteversenitp" 
+	      data-button-theme="light"
+	      style={{height: '44px', width: '312px'}}
+      ></div>
         <a href="path to the file" download className="p-3 text-black font-semibold font-japanese text-2xl" style={{
           backgroundImage: `url(${PaperRoll.src})`,
           width: 'fit',

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 import Image from 'next/image'
 import Navigation from './navigation'
@@ -13,8 +14,19 @@ import bg1 from "@/../public/byteverse/hero/hero-background.svg";
 import bg2 from "@/../public/byteverse/hero/Rectangle.svg";
 
 export default function Hero() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+      }
+    }, []);
+
   return (
-    <main id="home" className="relative flex min-h-screen overflow-hidden flex-col items-center justify-center px-24 bg-[#720D0D]">
+    <main className="relative flex min-h-screen overflow-hidden flex-col items-center justify-center px-24">
       <Navigation />
       <Image
         alt="bg-1"

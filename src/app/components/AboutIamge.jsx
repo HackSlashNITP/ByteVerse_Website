@@ -10,7 +10,7 @@ const AboutIamge = () => {
         width={1050}
         height={192}
         priority={true}
-        zIndex={10}
+        zindex={10}
       />
     </div>
   );
