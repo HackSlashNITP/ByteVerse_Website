@@ -3,7 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-const Card = (props) => {
+const Card = () => {
+
+  
+  const instagramUrl = "https://instagram.com"; 
+  const linkedinUrl = "https://linkedin.com"; 
+
   return (
     <div className="bg-[#541E1E] w-full md:w-[80vw] h-auto md:h-[300px] flex flex-col p-5 rounded-lg shadow-md md:p-10">
       <div className="flex flex-col md:flex-row pt-20 sm:pt-20 md:pt-10 ">
@@ -27,12 +32,12 @@ const Card = (props) => {
           </p>
         </div>
         <div className="w-7/10 mb-6 md:w-1/20 flex flex-row md:flex-col justify-center items-center pt-5 gap-2">
-          <Link href={`${props.instagram}`} target="_blank">
+          <Link href={instagramUrl} target="_blank">
             <div className="text-white hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={30} />
             </div>
           </Link>
-          <Link href={`${props.linkedin}`} target="_blank">
+          <Link href={linkedinUrl} target="_blank">
             <div className="text-white hover:text-blue-500 transition-colors duration-300">
               <FaLinkedin size={30} />
             </div>

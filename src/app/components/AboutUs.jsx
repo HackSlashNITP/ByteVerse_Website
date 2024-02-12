@@ -7,6 +7,14 @@ import Link from "next/link";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 const About = (props) => {
+
+  const desco_link = "";
+  const desco_insta = "";
+
+  
+  const gdsc_link = "";
+  const gdsc_insta = "";
+
   return (
     <main id="about" className="flex flex-col  md:justify-start items-center   h-screen  ">
       <div className=" md-10"> 
@@ -16,17 +24,16 @@ const About = (props) => {
         <Card
         />
         </div>
-        <div className="m-14">
-        <div className="flex flex-col md:space-y-2 md:flex-row justify-evenly items-center">
+        <div className="m-14 flex flex-col md:space-y-2 md:flex-row justify-evenly items-center">
         <div className="bg-[#541E1E] w-10/10 md:w-3/5 lg:w-2/5 h-9/10 flex flex-col p-5 rounded-lg shadow-md md:p-10">
       <div className="flex flex-col items-center pt-10 sm:pt-10">
         <div className="flex flex-col items-center">
         <Image
             className="object-contain mt-8"
-            src={`/byteverse/gdsclogo.png`}
+            src={`/byteverse/Gdsclogo.png`}
             alt=" Logo"
-            width={380}
-            height={380}
+            width={385}
+            height={385}
           />
         </div>
         <div className="w-full">
@@ -37,12 +44,12 @@ const About = (props) => {
           </p>
         </div>
         <div className="w-full flex flex-row justify-center items-center gap-2 p-3">
-          <Link href={`${props.instagram}`} target="_blank">
+          <Link href={gdsc_insta} target="_blank">
             <div className="text-white hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={30} />
             </div>
           </Link>
-          <Link href={`${props.linkedin}`} target="_blank">
+          <Link href={gdsc_link} target="_blank">
             <div className="text-white hover:text-blue-500 transition-colors duration-300">
               <FaLinkedin size={30} />
             </div>
@@ -70,12 +77,12 @@ const About = (props) => {
           </p>
         </div>
         <div className="w-full flex flex-row justify-center items-center gap-2 p-3">
-          <Link href={`${props.instagram}`} target="_blank">
+          <Link href={desco_insta} target="_blank">
             <div className="text-white hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={30} />
             </div>
           </Link>
-          <Link href={`${props.linkedin}`} target="_blank">
+          <Link href={desco_link} target="_blank">
             <div className="text-white hover:text-blue-500 transition-colors duration-300">
               <FaLinkedin size={30} />
             </div>
@@ -83,8 +90,6 @@ const About = (props) => {
         </div>
       </div>
     </div>
-        </div>
-       
         </div>
     </main>
   );

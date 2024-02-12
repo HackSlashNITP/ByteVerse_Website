@@ -5,7 +5,7 @@ const AboutIamge = () => {
   return (
     <div>
       <Image
-        src="/byteverse/AboutUs.png"
+        src="/byteverse/aboutus.png"
         alt="About US Logo"
         width={1050}
         height={192}
