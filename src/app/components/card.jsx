@@ -14,8 +14,8 @@ const Card = () => {
       <div className="flex flex-col md:flex-row pt-20 sm:pt-20 md:pt-10 ">
         <div className="w-full md:w-1/4 mb-4 md:mb-0 flex flex-col">
           <Image
-            className="mx-auto mt-16"
-            src={`/byteverse/hack.png`}
+            className="mx-auto mt-4"
+            src={`/byteverse/hackkkk.png`}
             alt=" Logo"
             width={200}
             height={200}
