@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "name": "Abhinav",
+    "role": "Software Development Engineer",
+    "des": "Amazon",
+    "url": "https://media.licdn.com/dms/image/D5603AQEQt0C3Hk0ZkQ/profile-displayphoto-shrink_400_400/0/1701261547075?e=1713398400&v=beta&t=rP6Nk15OkFeUPql0rHXcRNX5Y-1gJ1hZ-r6XxZRFFyw",
+    "linkedin": "https://www.linkedin.com/in/mastersabh/",
+    "twitter": "",
+    "github": ""
+  },
+  {
+    "id": 2,
+    "name": "Adeeba Naaz",
+    "role": "SDE",
+    "des": "Microsoft",
+    "url": "https://media.licdn.com/dms/image/D4D03AQHV_hpg7GV4Pw/profile-displayphoto-shrink_400_400/0/1693683102073?e=1713398400&v=beta&t=mZE8AFvouAneEflskkQ2R4wd6YOHiPnxJXHg7B2Fyao",
+    "linkedin": "https://www.linkedin.com/in/adeeba-naaz-153427113/",
+    "twitter": "",
+    "github": ""
+  },
+
+  {
+    "id": 3,
+    "name": "Vrinda Gupta",
+    "role": "Web developer",
+    "des": "Microsoft",
+    "url": "https://media.licdn.com/dms/image/C4E03AQHOhXYZnk0rmw/profile-displayphoto-shrink_400_400/0/1621575306131?e=1713398400&v=beta&t=RqduLqVAUtbH8p40XHQKnRwazJCiIT3impH5BFm74p0",
+    "linkedin": "https://www.linkedin.com/in/vrindagupta6828/",
+    "twitter": "",
+    "github": ""
+  },
+  {
+    "id": 4,
+    "name": "Shrankhla Srivastava",
+    "role": "ML, AI Mentor",
+    "des": "AnitaB.org",
+    "url": "https://media.licdn.com/dms/image/C4E03AQFy7FGzkRz3Yw/profile-displayphoto-shrink_400_400/0/1633951626712?e=1713398400&v=beta&t=5iudMFZY5txjuDHmrvcVZq4LJM-xYLOfv6rs9YLplxI",
+    "linkedin": "https://www.linkedin.com/in/shrankhla-srivastava-igdtuw/",
+    "twitter": "",
+    "github": ""
+  },
+
+  {
+    "id": 5,
+    "name": "Shreya Singh",
+    "role": "Software Development Engineer",
+    "des": "Uber",
+    "url": "https://media.licdn.com/dms/image/D5603AQFCMX8_jQXDfA/profile-displayphoto-shrink_400_400/0/1690377742240?e=1713398400&v=beta&t=DoUh8cEJDDY4xRmxcYf_Beyj6jmcvne_cY5xDJcEPu8",
+    "linkedin": "https://www.linkedin.com/in/singh-shreya/",
+    "twitter": "",
+    "github": " "
+  },
+  {
+    "id": 6,
+    "name": "Aman Singh",
+    "role": "Software Development Engineer",
+    "des": "Microsoft",
+    "url": "https://media.licdn.com/dms/image/C5603AQGYYYE4JLXuXA/profile-displayphoto-shrink_400_400/0/1607577918291?e=1713398400&v=beta&t=Al3dr9J8U4UHN9e6ehEjxSIBoHL4DDRpuuT7NWST4Vk",
+    "linkedin": "https://www.linkedin.com/in/aman-singh-1b3287174/",
+    "twitter": " ",
+    "github": " "
+  },
+  {
+    "id": 7,
+    "name": "Gunjan Madaan",
+    "role": "Software Development Engineer",
+    "des": "Microsoft",
+    "url": "https://media.licdn.com/dms/image/C4D03AQF3hTNkJNIyAg/profile-displayphoto-shrink_400_400/0/1646152713583?e=1713398400&v=beta&t=8L6Vf_tJjZTMwvHTOVlWJQKMlLcFD6cywhSGgJzUNng",
+    "linkedin": "https://www.linkedin.com/in/gunjanmadaan",
+    "twitter": "",
+    "github": " "
+  },
+
+  {
+    "id": 6,
+    "name": "Pallavi Shrivastava",
+    "role": "Product /UI/UX Designer",
+    "des": "Busibud",
+    "url": "https://media.licdn.com/dms/image/C4E03AQHLloqGfRrpzA/profile-displayphoto-shrink_400_400/0/1607608902143?e=1713398400&v=beta&t=Tm32qV2ZjIcP7bsFRqcMkqmdKZXBOJWfSGxqOLiUdgI",
+    "linkedin": "https://www.linkedin.com/in/pallavisrstv/",
+    "twitter": "",
+    "github": " "
+  },
+
+  {
+    "id": 9,
+    "name": "Ayushi Prakash",
+    "role": "UI/UX Designer",
+    "des": "Gif Games",
+    "url": "https://media.licdn.com/dms/image/D4D35AQFr-UKq9U_zEA/profile-framedphoto-shrink_400_400/0/1702539089208?e=1708394400&v=beta&t=1AHiv4hCeabFWOqFxcoN5AoakO5Nj3MLGFHyiLm3-Uc",
+    "linkedin": "https://www.linkedin.com/in/ayushiprakash03/",
+    "twitter": "",
+    "github": " "
+  }
+]

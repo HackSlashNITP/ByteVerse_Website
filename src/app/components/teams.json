@@ -1,0 +1,96 @@
+{
+    "Leads": [
+      {
+        "id":  1,
+        "name": "John Smith",
+        "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+        "group": "Leads"
+      },
+      {
+        "id":  2,
+        "name": "Jane Doe",
+        "photo": "https://randomuser.me/api/portraits/women/28.jpg",
+        "group": "Leads"
+      },
+      {
+        "id":  3,
+        "name": "Bob Wilson",
+        "photo": "https://randomuser.me/api/portraits/men/45.jpg",
+        "group": "Leads"
+      }
+    ],
+    "Web": [
+      {
+        "name":"amelie",
+        "photo":"https://ychef.files.bbci.co.uk/1600x900/p09w4m72.webp",
+        "group": "Web"
+      },
+      {
+        "name": "Sarah Lee",
+        "photo": "https://randomuser.me/api/portraits/women/44.jpg",
+        "group": "Web"
+      },
+      {
+        "name": "Mike Davis",
+        "photo": "https://randomuser.me/api/portraits/men/53.jpg",
+        "group": "Web"
+      },
+      {
+        "name": "Jessica Thompson",
+        "photo": "https://randomuser.me/api/portraits/women/27.jpg",
+        "group": "Web"
+      }
+    ],
+    "Sponsorship": [
+      {
+        "name": "Chris Martin",
+        "photo": "https://randomuser.me/api/portraits/men/24.jpg",
+        "group": "Sponsorship"
+      },
+      {
+        "name": "Emily Wilson",
+        "photo": "https://randomuser.me/api/portraits/women/25.jpg",
+        "group": "Sponsorship"
+      },
+      {
+        "name": "David Johnson",
+        "photo": "https://randomuser.me/api/portraits/men/65.jpg",
+        "group": "Sponsorship"
+      }
+    ],
+    "Design": [
+      {
+        "name": "Michelle Harris",
+        "photo": "https://randomuser.me/api/portraits/women/30.jpg",
+        "group": "Design"
+      },
+      {
+        "name": "Bob Marley",
+        "photo": "https://randomuser.me/api/portraits/men/12.jpg",
+        "group": "Design"
+      },
+      {
+        "name": "Sandra Dee",
+        "photo": "https://randomuser.me/api/portraits/women/14.jpg",
+        "group": "Design"
+      }
+    ],
+    "Management": [
+      {
+        "name": "Michael Scott",
+        "photo": "https://randomuser.me/api/portraits/men/42.jpg",
+        "group": "Management"
+      },
+      {
+        "name": "Pam Beesly",
+        "photo": "https://randomuser.me/api/portraits/women/21.jpg",
+        "group": "Management"
+      },
+      {
+        "name": "Dwight Schrute",
+        "photo": "https://randomuser.me/api/portraits/men/22.jpg",
+        "group": "Management"
+      }
+    ]
+  }
+  
