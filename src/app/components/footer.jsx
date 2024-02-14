@@ -52,10 +52,11 @@ const FooterSection = () => {
   };
 
   return (
+    <div className="footer-grad">
     <div
       id="contact"
-      className="h-[140vh] font-[Inter] flex flex-col bg-cover bg-no-repeat "
-      style={{ backgroundImage: "url(/byteverse/footer/footerbg.png)" }}
+      className="h-[140vh] font-[Inter] flex flex-col bg-cover bg-no-repeat  "
+      style={{  }}
     >
       <div className="h-[115vh] flex md:justify-end md:items-end md:p-5 lg:pr-36 justify-center items-center">
         <form
@@ -173,6 +174,7 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

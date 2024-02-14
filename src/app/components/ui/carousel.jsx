@@ -2,6 +2,7 @@
 import * as React from "react"
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons"
 import useEmblaCarousel from "embla-carousel-react";
+import { useEffect, useCallback } from "react";
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/app/components/ui/button"
@@ -18,6 +19,8 @@ function useCarousel() {
   return context
 }
 
+
+
 const Carousel = React.forwardRef((
   {
     orientation = "horizontal",
@@ -26,6 +29,7 @@ const Carousel = React.forwardRef((
     plugins,
     className,
     children,
+    type,
     ...props
   },
   ref
@@ -34,6 +38,17 @@ const Carousel = React.forwardRef((
     ...opts,
     axis: orientation === "horizontal" ? "x" : "y",
   }, plugins)
+
+  
+
+  
+  const logSlidesInView = useCallback((api) => { 
+    if(type == "teams"){
+      console.log(api.slidesInView())
+      console.log(api.slideNodes())
+    }
+    }, [])
+  useEffect(() => {    if (api) api.on('slidesInView', logSlidesInView)  }, [api, logSlidesInView])
   const [canScrollPrev, setCanScrollPrev] = React.useState(false)
   const [canScrollNext, setCanScrollNext] = React.useState(false)
 
@@ -122,7 +137,7 @@ const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
         ref={ref}
         className={cn(
           "flex",
-          orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
+          orientation === "horizontal" ? "-ml-3" : "-mt-4 flex-col",
           className
         )}
         {...props} />
@@ -140,7 +155,7 @@ const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
       role="group"
       aria-roledescription="slide"
       className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full",
+        `min-w-0 shrink-0 grow-0 basis-full`,
         orientation === "horizontal" ? "pl-4" : "pt-4",
         className
       )}
@@ -149,7 +164,7 @@ const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
 })
 CarouselItem.displayName = "CarouselItem"
 
-const CarouselPrevious = React.forwardRef(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+const CarouselPrevious = React.forwardRef(({ className, variant, size = "icon", ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
@@ -157,20 +172,20 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "outline", siz
       ref={ref}
       variant={variant}
       size={size}
-      className={cn("absolute  h-8 w-8 rounded-full", orientation === "horizontal"
-        ? "-left-12 top-1/2 -translate-y-1/2"
-        : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+      className={cn("absolute scale-75 sm:scale-100  h-8 w-8 rounded-full group", orientation === "horizontal"
+        ? "-left-8 sm:-left-12 -translate-y-1/2"
+        : "-top-12 left-1/2 -translate-x-1/2 rotate-90",variant == "teams" ? "top-1/3" : "top-1/2", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}>
-      <ArrowLeftIcon className="h-4 w-4" />
+      <ArrowLeftIcon className={`h-4 w-4 ${variant == "teams" ? "text-[#C89E6D] group-hover:text-black" : ""}`} />
       <span className="sr-only">Previous slide</span>
     </Button>)
   );
 })
 CarouselPrevious.displayName = "CarouselPrevious"
 
-const CarouselNext = React.forwardRef(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+const CarouselNext = React.forwardRef(({ className, variant, size = "icon", ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (
@@ -178,13 +193,13 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
       ref={ref}
       variant={variant}
       size={size}
-      className={cn("absolute h-8 w-8 rounded-full", orientation === "horizontal"
-        ? "-right-12 top-1/2 -translate-y-1/2"
-        : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+      className={cn("absolute scale-75 sm:scale-100 h-8 w-8 rounded-full group", orientation === "horizontal"
+        ? "-right-8 sm:-right-12 -translate-y-1/2"
+        : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", variant == "teams" ? "top-1/3" : "top-1/2", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}>
-      <ArrowRightIcon className="h-4 w-4" />
+      <ArrowRightIcon className={`h-4 w-4 ${variant == "teams" ? "text-[#C89E6D] group-hover:text-black" : ""}`} />
       <span className="sr-only">Next slide</span>
     </Button>)
   );

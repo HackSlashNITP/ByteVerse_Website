@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "react-scroll";
+// import Link from "next/link";
 
 export default function Sidebar({ open, toggle }) {
   const frameVariants = {
@@ -31,19 +32,19 @@ export default function Sidebar({ open, toggle }) {
       initial={{ x: -750 }}
       animate={{ x: open ? 0 : -750 }}
       transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
-      className="md:hidden flex w-[101vw] h-screen bg-black absolute top-0 left-0 p-36 font-japanese text-lg whitespace-nowrap"
+      className="md:hidden flex w-[80vw] h-screen bg-black absolute top-0 left-0 p-20 pt-28 font-japanese text-xl  whitespace-nowrap" style={{zIndex:"200"}}
     >
       <motion.ul
         variants={frameVariants}
         animate={open ? "visible" : "hidden"}
-        className="flex flex-col h-full w-full text-white justify-between items-center"
+        className="flex flex-col h-full w-full text-white gap-7 justify-start items-center"
       >
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
           <Link
-            href="/"
+            to="home"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
@@ -55,7 +56,7 @@ export default function Sidebar({ open, toggle }) {
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
           <Link
-            href="/#about"
+            to="about"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
@@ -67,7 +68,7 @@ export default function Sidebar({ open, toggle }) {
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
           <Link
-            href="/timeline"
+            to="timeline"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
@@ -79,7 +80,7 @@ export default function Sidebar({ open, toggle }) {
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
           <Link
-            href="/#rules"
+            to="rules"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
@@ -91,7 +92,7 @@ export default function Sidebar({ open, toggle }) {
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
           <Link
-            href="/#sponsors"
+            to="sponsors"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
@@ -103,7 +104,7 @@ export default function Sidebar({ open, toggle }) {
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
           <Link
-            href="#contact"
+            to="contact"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >

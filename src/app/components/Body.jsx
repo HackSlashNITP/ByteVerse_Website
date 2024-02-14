@@ -1,40 +1,40 @@
-'use client';
+"use client";
 
 import { motion } from "framer-motion";
-import PaperRoll from '@/../public/PaperRoll.svg'
+import PaperRoll from "@/../public/PaperRoll.svg";
+import CountdownUI from "./countdownUI";
 
 export default function Body() {
   return (
     <motion.div
       initial={{ y: 500 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.8, delay: 4, type: 'spring', bounce: 0.17 }}
-      className="flex flex-col gap-6 z-40 xl:w-3/4 w-4/5 lg:text-lg text-sm font-lato mt-3">
-      <p className="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet
-        gravida mi, sed bibendum diam fermentum a. Proin commodo enim sed augue
-        rutrum imperdiet. Aliquam quis aliquam mi. Quisque vehicula porta
-        bibendum. Nam vestibulum egestas orci, sit amet semper arcu imperdiet
-        nec. Pellentesque facilisis justo vitae dui congue congue.
-      </p>
-      <div className="flex gap-6 items-center justify-center">
-      <div 
-	      className="apply-button" 
-	      data-hackathon-slug="byteversenitp" 
-	      data-button-theme="light"
-	      style={{height: '44px', width: '312px'}}
-      ></div>
-        <a href="path to the file" download className="p-3 text-black font-semibold font-japanese text-2xl" style={{
-          backgroundImage: `url(${PaperRoll.src})`,
-          width: 'fit',
-          height: '100%',
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          
-          }}>
+      transition={{ duration: 0.8, delay: 4, type: "spring", bounce: 0.17 }}
+      className="flex flex-col gap-6 z-40 xl:w-3/4 w-4/5 lg:text-lg text-sm font-lato mt-3"
+    >
+      <div className="flex flex-col gap-6 items-center justify-center">
+        <CountdownUI />
+        <div
+          className="apply-button"
+          data-hackathon-slug="byteversenitp"
+          data-button-theme="dark"
+          style={{ height: "44px", width: "312px" }}
+        ></div>
+        {/* <a
+          href="path to the file"
+          download
+          className="p-3 text-black font-semibold font-japanese text-xl md:text-2xl"
+          style={{
+            backgroundImage: `url(${PaperRoll.src})`,
+            width: "fit",
+            height: "100%",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           RULEBOOK
-        </a>
+        </a> */}
       </div>
     </motion.div>
   );

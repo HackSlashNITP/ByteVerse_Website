@@ -14,8 +14,8 @@ const Category=(props)=>{
 
     return (
         <div className="flex flex-col justify-center items-center" >
-        <div className="w-max mx-auto relative my-10">
-            <Image src={paperRollImg} className="w-auto h-[20vw] lg:h-[10vw]" alt={"roll"} style={{width:"auto",justifySelf:"start"}} />
+        <div className="w-max mx-auto relative my-10 z-10">
+            <Image src={paperRollImg} className="w-auto h-[20vw] lg:h-[10vw] z-10" alt={"roll"} style={{width:"auto",justifySelf:"start"}} />
             <div className="absolute top-[35%]  w-full flex justify-center">
             <p className="  left-[50%] right-[50%] font-japanese text-black text-[1rem] md:text-[2rem]">{props.title}</p>
             </div>
