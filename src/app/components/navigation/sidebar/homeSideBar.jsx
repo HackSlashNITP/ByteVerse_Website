@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
-// import Link from "next/link";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
-export default function Sidebar({ open, toggle }) {
+export default function HomeSidebar({ open, toggle }) {
   const frameVariants = {
     hidden: {
       opacity: 0,
@@ -43,32 +43,32 @@ export default function Sidebar({ open, toggle }) {
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
-          <Link
+          <ScrollLink
             to="home"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
             Home
-          </Link>
+          </ScrollLink>
         </motion.li>
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
-          <Link
+          <ScrollLink
             to="about"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
             About Us
-          </Link>
+          </ScrollLink>
         </motion.li>
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
           <Link
-            to="timeline"
+            href="/timeline"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
@@ -79,37 +79,37 @@ export default function Sidebar({ open, toggle }) {
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
-          <Link
+          <ScrollLink
             to="rules"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
             Rules
-          </Link>
+          </ScrollLink>
         </motion.li>
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
-          <Link
+          <ScrollLink
             to="sponsors"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
             Sponsors
-          </Link>
+          </ScrollLink>
         </motion.li>
         <motion.li
           variants={navbarItemVariant}
           className="md:hover:text-white/80 group transition-all cursor-pointer"
         >
-          <Link
+          <ScrollLink
             to="contact"
             onClick={toggle}
             className="md:group-hover:border-white border-transparent border-b-2 pb-1 px-1 transition-all duration-300"
           >
             Contact Us
-          </Link>
+          </ScrollLink>
         </motion.li>
       </motion.ul>
     </motion.div>

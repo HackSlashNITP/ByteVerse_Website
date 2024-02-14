@@ -2,9 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import CountdownUI from "../components/countdownUI";
 import Image from "next/image";
-import Navigation from "./navigation";
+import HomeNavigation from "./navigation/HomeNav";
 import Logo from "./Logo";
 import Ground from "./Ground";
 import Baadal from "./Silverlines";
@@ -27,7 +26,7 @@ export default function Hero() {
 
   return (
     <main className="relative flex min-h-screen overflow-hidden flex-col items-center justify-center px-24">
-      <Navigation />
+      <HomeNavigation />
       <Image
         alt="bg-1"
         src={bg1}

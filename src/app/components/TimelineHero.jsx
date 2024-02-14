@@ -2,8 +2,8 @@
 
 import { motion } from 'framer-motion';
 
+import TimelineNavigation from './navigation/TimelineNav';
 import Image from 'next/image'
-import Navigation from './navigation'
 import Ground from './Ground'
 import Baadal from './Silverlines'
 
@@ -15,7 +15,7 @@ import sun from "@/../public/byteverse/hero/sun.svg";
 export default function TimelineHero() {
   return (
     <main id="home" className="relative flex min-h-screen w-full overflow-hidden flex-col items-center justify-center px-24 bg-[#720D0D]">
-      <Navigation />
+      <TimelineNavigation />
       <Image
         alt="bg-1"
         src={bg1}

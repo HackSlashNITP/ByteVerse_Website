@@ -2,13 +2,14 @@
 import { motion } from "framer-motion";
 
 import { useState } from "react";
-import Navbar from "./navbar";
-import Sidebar from "./sidebar";
+import HomeNavbar from "./navbar/homeNav";
+import HomeSidebar from "./sidebar/homeSideBar";
+
 
 import arrowLeft from "@/../public/byteverse/hero/arrow.svg";
 import Image from "next/image";
 
-const Navigation = () => {
+const HomeNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     if(!isOpen) {
@@ -26,11 +27,11 @@ const Navigation = () => {
       transition={{ duration: 1.5, delay: 6 ,ease:"easeOut"}}
       className="w-full flex top-0 mx-6 z-[100] items-center justify-center fixed">
       <div hidden={!isOpen} className="h-[140vh] w-[100vw] fixed top-0 bg-[#54191962]" style={{zIndex:"110"}}  >
-        <Sidebar toggle={toggle} open={isOpen}/>
+        <HomeSidebar toggle={toggle} open={isOpen}/>
         <div className="absolute right-0 h-[140vh] w-[100vw] " hidden={!isOpen} onClick={toggle}></div>
       </div>
       
-      <Navbar />
+      <HomeNavbar />
 
       <button className={`${isOpen ? 'rotate-0' : 'rotate-180'} cursor-pointer md:hidden block absolute active:invert left-0 ml-8 mt-8 top-0 transition-all duration-150`} onClick={toggle} style={{zIndex:"250"}}>
           <Image src={arrowLeft} alt="Back" className="p-1" />
@@ -39,4 +40,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default HomeNavigation;
